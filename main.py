@@ -105,7 +105,7 @@ async def on_raw_reaction_add(payload):
 
 @bot.event
 async def on_raw_reaction_remove(payload):
-        #getting the removerd emoji name and the channel
+    #getting the removed emoji name and the channel
     react_emoji = payload.emoji.name
     id_channel = payload.channel_id
     if react_emoji == '⏯' and id_channel == 843133363334152192 :
