@@ -42,11 +42,13 @@ $ git clone https://github.com/Rayanego/Discord_VLC.git
  
 ### Accessing your video
 * Put your file in the same folder as main.py
+### Edit main.py
 * Enter your file name in the source variable (line 16) 
     * e.g :
     ```py
     source = "Paprika.mp4"
     ```
+ * enter your channel id in the discord_channel variable (line 60)
 * Save
 ### Run the code and enjoy
  
