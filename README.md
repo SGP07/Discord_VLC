@@ -23,8 +23,8 @@ When you start the program the discord bot will send a message with informations
 
 
  ## Built with 
- * discordpy
- * libVLC
+ * [discord.py](https://discordpy.readthedocs.io/en/stable/)
+ * [libVLC](https://www.olivieraubert.net/vlc/python-ctypes/doc/)
 
 
 ## How to use 
