@@ -68,11 +68,11 @@ async def on_ready():
     emoji = '⏯'
     #message embed
     embedVar = discord.Embed(
-        title="Informations sur le media :", description="", color=0x0193e9)
+        title="Informations about the media :", description="", color=0x0193e9)
     embedVar.add_field(
-        name="Titre : ", value=name, inline=False)
+        name="Title : ", value=name, inline=False)
     embedVar.add_field(
-        name="Durée ", value=str(converted_duration), inline=False)
+        name="Duration ", value=str(converted_duration), inline=False)
     embedVar.add_field(
         name="Resolution : ", value=str(resolution), inline=False)
     
@@ -140,15 +140,13 @@ async def uptime(ctx):
     embedVar = discord.Embed(
         title="", description="", color=0x0193e9)
     embedVar.add_field(
-        name="Temps actuel : ", value=str(converted_current_time), inline=False)
+        name="Current time : ", value=str(converted_current_time), inline=False)
     embedVar.add_field(
-        name="Temps restant ", value=str(converted_time_left), inline=False)
+        name="Time left ", value=str(converted_time_left), inline=False)
     await ctx.send(embed=embedVar)
         
 
-
-    
-token = ""
+token = "NzY0MDkxMTk5MDg2MjY0Mzkw.X4BNYQ.q69lAqAqLrP93PneQTZvl-VzgZc"
 
 #running the bot
 bot.run(token)
