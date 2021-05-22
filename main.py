@@ -57,6 +57,7 @@ converted_duration = convert(duration)
 name = re.findall('(.+)\.[a-z0-9]+', source)
 name = str(name)
 
+discord_channel = 843133363334152192
 
 #initiation of the bot
 @bot.event
@@ -64,7 +65,7 @@ async def on_ready():
     print('Ready!')
     await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='Anime'))
      
-    channel = bot.get_channel(843133363334152192)
+    channel = bot.get_channel(discord_channel)
     emoji = '⏯'
     #message embed
     embedVar = discord.Embed(
@@ -84,9 +85,9 @@ async def on_ready():
 async def on_raw_reaction_add(payload):
     #getting the emoji name and the channel 
     react_emoji = payload.emoji.name
-    id_channel = payload.channel_id
+    id_channel = payload.discord_channel
 
-    if react_emoji == '⏯' and id_channel == 843133363334152192 :
+    if react_emoji == '⏯' and id_channel == discord_channel :
               
         if state == playing :
             media_player.pause()
@@ -107,8 +108,8 @@ async def on_raw_reaction_add(payload):
 async def on_raw_reaction_remove(payload):
     #getting the removed emoji name and the channel
     react_emoji = payload.emoji.name
-    id_channel = payload.channel_id
-    if react_emoji == '⏯' and id_channel == 843133363334152192 :
+    id_channel = payload.discord_channel
+    if react_emoji == '⏯' and id_channel == discord_channel :
 
         if state == playing :
             media_player.pause()
