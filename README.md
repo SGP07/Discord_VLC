@@ -9,9 +9,9 @@ When you start the program the discord bot will send a message with informations
 
 ## Features
 
-* Gets informations about the video without discord
+* Gets informations about the video 
     * (Title, Duration, Resolution)
-* Play and Pause the video without discord
+* Play and Pause the video
 * Command to see how much time is left
  
  
