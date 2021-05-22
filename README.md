@@ -47,7 +47,8 @@ $ git clone https://github.com/Rayanego/Discord_VLC.git
     ```py
     source = "Paprika.mp4"
     ```
-* Save and run
+* Save
+### Run the code and enjoy
  
  ***
   ## Demo
