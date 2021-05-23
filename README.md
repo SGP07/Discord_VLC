@@ -1,7 +1,7 @@
 # Discord_VLC
 
 
-## Description 
+## Description :
 A program that allows you to play a video and control it (play/pause) by adding or removing discord reactions to a message. It can be useful when watching a movie with friends with shared screen so that they can pause if they need to (that's how i had the idea ).  
 When you start the program the discord bot will send a message with informations about the video, then add a reaction to pause it.
 
@@ -17,7 +17,7 @@ When you start the program the discord bot will send a message with informations
  
 ## To do
 * Add volume control
-* Moving in the timeling 
+* Moving in the timeline
     * forward and backward reactions
 * Add a GUI so that you can still control your video without discord
 
@@ -49,6 +49,7 @@ $ git clone https://github.com/Rayanego/Discord_VLC.git
     source = "Paprika.mp4"
     ```
  * enter your channel id in the discord_channel variable (line 60)
+ * enter your token in the token variable (line 150) 
 * Save
 ### Run the code and enjoy
  
