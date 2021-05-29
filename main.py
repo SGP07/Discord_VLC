@@ -13,7 +13,7 @@ bot = commands.Bot(command_prefix='!')
 bot.remove_command('help')
 
 #enter your path here
-source = "Paprika.mp4"
+source = ""
 
 # creating vlc media player object
 media_player = vlc.MediaPlayer()
@@ -85,7 +85,7 @@ async def on_ready():
 async def on_raw_reaction_add(payload):
     #getting the emoji name and the channel 
     react_emoji = payload.emoji.name
-    id_channel = payload.discord_channel
+    id_channel = payload.channel_id
 
     if react_emoji == '⏯' and id_channel == discord_channel :
               
@@ -108,7 +108,7 @@ async def on_raw_reaction_add(payload):
 async def on_raw_reaction_remove(payload):
     #getting the removed emoji name and the channel
     react_emoji = payload.emoji.name
-    id_channel = payload.discord_channel
+    id_channel = payload.channel_id
     if react_emoji == '⏯' and id_channel == discord_channel :
 
         if state == playing :
