@@ -7,12 +7,13 @@ import time
 import re
 
 
-print("Chargement...")
-bot = commands.Bot(command_prefix='!')
+print("Loading...")
+intents = intents = discord.Intents.all()
+bot = commands.Bot(command_prefix='!', case_insensitive=True, intents=intents)
 bot.remove_command('help')
 
 #enter your path here
-source = ""
+source = input("Enter the name of your file: ")
 
 # creating vlc media player object
 media_player = vlc.MediaPlayer()
@@ -62,7 +63,7 @@ discord_channel = 843133363334152192
 @bot.event
 async def on_ready():
     print('Ready!')
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='Anime'))
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f'{name}'))
      
     channel = bot.get_channel(discord_channel)
     emoji = '⏯'
