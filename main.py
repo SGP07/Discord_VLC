@@ -1,6 +1,4 @@
 import discord
-from discord import channel
-from discord import message
 from discord.ext import commands
 import vlc
 import time
@@ -12,8 +10,8 @@ intents = intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='!', case_insensitive=True, intents=intents)
 bot.remove_command('help')
 
-#enter your path here
-source = input("Enter the name of your file: ")
+
+source = input("Enter the path of your file: ")
 
 # creating vlc media player object
 media_player = vlc.MediaPlayer()
@@ -57,7 +55,7 @@ converted_duration = convert(duration)
 name = re.findall('(.+)\.[a-z0-9]+', source)
 name = str(name)
 
-discord_channel = 843133363334152192
+discord_channel = int(input("Enter the channel id : "))
 
 #initiation of the bot
 @bot.event
@@ -147,7 +145,7 @@ async def uptime(ctx):
     await ctx.send(embed=embedVar)
         
 
-token = ""
+token = "NzY0MDkxMTk5MDg2MjY0Mzkw.GSsI_D.fXwhdHsB60-y295MIZinpkUFHZv3G62oMg6Bp4"
 
 #running the bot
 bot.run(token)
