@@ -145,7 +145,7 @@ async def uptime(ctx):
     await ctx.send(embed=embedVar)
         
 
-token = "NzY0MDkxMTk5MDg2MjY0Mzkw.GSsI_D.fXwhdHsB60-y295MIZinpkUFHZv3G62oMg6Bp4"
+token = ""
 
 #running the bot
 bot.run(token)
