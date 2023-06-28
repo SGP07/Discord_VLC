@@ -2,3 +2,6 @@
 discord_vlc/
 
 token.txt
+#ignore videos
+*.mp4
+*.mkv
